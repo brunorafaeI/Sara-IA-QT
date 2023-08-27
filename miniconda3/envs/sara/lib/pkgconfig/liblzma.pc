@@ -1,0 +1,19 @@
+#
+# Author: Lasse Collin
+#
+# This file has been put into the public domain.
+# You can do whatever you want with this file.
+#
+
+prefix=/app/miniconda3/envs/sara
+exec_prefix=/app/miniconda3/envs/sara
+libdir=/app/miniconda3/envs/sara/lib
+includedir=/app/miniconda3/envs/sara/include
+
+Name: liblzma
+Description: General purpose data compression library
+URL: https://tukaani.org/xz/
+Version: 5.4.2
+Cflags: -I${includedir}
+Libs: -L${libdir} -llzma
+Libs.private: -pthread -lpthread

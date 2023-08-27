@@ -1,0 +1,13 @@
+prefix=/app/miniconda3/envs/sara
+exec_prefix=/app/miniconda3/envs/sara
+libdir=/app/miniconda3/envs/sara/lib
+sharedlibdir=/app/miniconda3/envs/sara/lib
+includedir=/app/miniconda3/envs/sara/include
+
+Name: zlib
+Description: zlib compression library
+Version: 1.2.13
+
+Requires:
+Libs: -L${libdir} -L${sharedlibdir} -lz
+Cflags: -I${includedir}

@@ -1,0 +1,13 @@
+version: '3.9'
+
+services:
+
+  sara-ai:
+    image: python:3.11.5-bullseye
+    working_dir: /app
+    container_name: sara-ai
+    ports:
+      - "5002:5002"
+    volumes:
+      - ./:/app
+    command: sh -c "while sleep 1000; do :; done"
